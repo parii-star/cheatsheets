@@ -40,6 +40,49 @@ If you remember one thing, remember this: **Git saves the work, GitHub shares th
 | `git push [remote] [branch]` | Send your commits online. |
 | `git pull [remote] [branch]` | Get and merge changes from online. |
 
+## Complete Git Commands Reference
+
+| Command | Short Description | Example Usage | Expected Output |
+| --- | --- | --- | --- |
+| `cd folder-name` | Move into folder | `cd ~/Documents/cheatsheets` | Terminal moves into folder |
+| `git init` | Initialize Git repository | `git init` | `Initialized empty Git repository` |
+| `git status` | Check repo status | `git status` | Shows staged/unstaged files |
+| `git add .` | Stage current files | `git add .` | No output if successful |
+| `git add -A` | Stage all changes including deletions | `git add -A` | No output |
+| `git commit -m "msg"` | Create commit | `git commit -m "Initial commit"` | `[main abc123] Initial commit` |
+| `git config --global user.name "name"` | Set username globally | `git config --global user.name "parii-star"` | No output |
+| `git config --global user.email "email"` | Set email globally | `git config --global user.email "abc@gmail.com"` | No output |
+| `git config --list` | Show all configs | `git config --list` | Displays Git settings |
+| `git remote -v` | Show connected remotes | `git remote -v` | Shows origin fetch/push URLs |
+| `git remote add origin URL` | Connect GitHub repo | `git remote add origin https://github.com/parii-star/cheatsheets.git` | No output |
+| `git push -u origin main` | First push to GitHub | `git push -u origin main` | Upload progress + branch tracking |
+| `git push` | Push latest changes | `git push` | `Everything up-to-date` or upload |
+| `git pull` | Download latest changes | `git pull` | Fetch + merge messages |
+| `git clone URL` | Download repository | `git clone https://github.com/parii-star/cheatsheets.git` | Creates local repo copy |
+| `git branch` | Show branches | `git branch` | `* main` |
+| `git branch dev` | Create branch | `git branch dev` | No output |
+| `git checkout dev` | Switch branch | `git checkout dev` | `Switched to branch 'dev'` |
+| `git checkout -b feature` | Create & switch branch | `git checkout -b feature` | `Switched to a new branch` |
+| `git log` | Show commit history | `git log` | Commit details list |
+| `git diff` | Show file changes | `git diff` | Displays changed lines |
+| `git restore file.md` | Undo file changes | `git restore README.md` | No output |
+| `git rm file.md` | Delete tracked file | `git rm README.md` | `rm 'README.md'` |
+| `git rm --cached file.md` | Unstage/remove from Git only | `git rm --cached secret.txt` | Removes from staging |
+| `git reset` | Unstage files | `git reset` | Unstaged files message |
+| `git reset --hard` | Remove all local changes | `git reset --hard` | `HEAD is now at...` |
+| `git fetch` | Download remote updates | `git fetch` | Download objects info |
+| `git merge dev` | Merge branch | `git merge dev` | Merge summary |
+| `git stash` | Save temporary changes | `git stash` | `Saved working directory` |
+| `git stash pop` | Restore stash | `git stash pop` | Restored changes |
+| `git remote remove origin` | Remove remote repo | `git remote remove origin` | No output |
+| `git mv old new` | Rename file | `git mv old.md new.md` | No output |
+| `git show` | Show commit details | `git show` | Commit diff/details |
+| `git tag v1.0` | Create version tag | `git tag v1.0` | No output |
+| `git commit --amend` | Edit last commit | `git commit --amend` | Opens editor/update commit |
+| `git clean -f` | Delete untracked files | `git clean -f` | Removed files list |
+| `git reflog` | Show Git history actions | `git reflog` | List of HEAD changes |
+| `git help status` | Open help page | `git help status` | Git manual/help page |
+
 ## GitHub Basics
 
 | Item | Clear Description |
