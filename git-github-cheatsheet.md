@@ -21,25 +21,6 @@ If you remember one thing, remember this: **Git saves the work, GitHub shares th
 3. You push the commits to GitHub.
 4. Other people review the work, open pull requests, and merge it.
 
-## Git Basics
-
-| Command | Clear Description |
-|---|---|
-| `git init` | Start a new Git repository here. |
-| `git clone [url]` | Copy a project from a URL. |
-| `git status` | Show what changed. |
-| `git add [file]` | Prepare one file to save. |
-| `git add .` | Prepare all changes to save. |
-| `git commit -m "message"` | Save what you prepared. |
-| `git branch` | Show your branches. |
-| `git switch [branch]` | Go to a different branch. |
-| `git switch -c [branch]` | Create and go to a new branch. |
-| `git merge [branch]` | Combine another branch here. |
-| `git log` | See past commits. |
-| `git diff` | Show changes you have not prepared yet. |
-| `git push [remote] [branch]` | Send your commits online. |
-| `git pull [remote] [branch]` | Get and merge changes from online. |
-
 ## Complete Git Commands Reference
 
 | Command | Short Description | Example Usage | Expected Output |
